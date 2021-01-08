@@ -1,0 +1,316 @@
+.content-z{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  body{ 
+    overflow-x:hidden;
+  }
+  .header-shop{
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #dcdcdc
+  }
+  .header-left{
+    float: left;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+  }
+  .header-right{
+      float: right;
+      display: block;
+      width: auto;
+      height: 30px;
+      margin-right: 15px;
+  }
+  .header-right ul li{
+    float: left;
+    padding: 0 10px;
+    line-height: 30px;
+    
+  }
+  .header-right ul li a{
+    text-decoration: none;
+    color: #999;;
+  }
+  /*  头部中间  */
+  .header-centent{
+    height: 60px;
+    padding-top: 5px;
+    overflow: hidden;
+  }
+  .header-imgs{
+    width: 266px;
+    margin-top: 5px;
+    height: 73px;
+    float: left;
+    overflow: hidden;
+  }
+  .header-imgs img{
+      width: 230px;
+      height: 55px;
+      float: left;
+      overflow: hidden;
+  }
+  .header-seek{
+    float: left;
+    width: 750px;
+    height: 55px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  .header-zb{
+    float: left;
+    height: auto;
+    margin: 10px 0 0;
+    display: block;
+    width: 380px;
+    height: 32px;
+    border: 1px solid red;
+    box-sizing: border-box;
+  }
+  .header-zb input:nth-child(1){
+    border: none;
+     width: 290px;
+     height: 30px;
+     margin-right: 3px;
+    display: block;
+    color: #666;
+      line-height: 30px;
+     border-radius: 5px;
+     float: left;
+  }
+  .header-zb input:nth-child(2){
+      padding: 0 10px;
+      margin: 0;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: right;
+      color: #fff;
+      background: #d51819;
+      border: none;
+      float: right;
+  }
+  form{
+    position: relative;
+  }
+  .iconfont{
+    font-family: bgweb-iconfont;
+      font-size: 18px;
+      font-style: normal;
+      color: #fff;
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      position: absolute;
+      right: 45px;
+      bottom: -26px;
+  }
+  .header-yb{
+    float: right;
+    width: 350px;
+    margin-top: 20px;
+  }
+  .header-yb ul li{
+    float: left;
+  }
+  .header-yb ul li a{
+    color: red;
+    text-decoration: none;
+  }
+  .header-yb ul li span{
+      float: right;
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0 10px;
+      color: #DCDCDC;
+  }
+  .header-gwc{
+      float: right;
+      width: 150px;
+      height: 55px;
+      padding-top: 27px;
+  }
+  .header-gwc a{
+    font: 400 14px "微软雅黑","宋体";
+    text-decoration: none;
+    color: #000;
+  }
+  .header-bottom{
+    height: 40px;
+    margin-top: 20px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .header-nav{
+    float: left;
+    width: 465px;
+    height: 40px;
+  }
+  .header-nav li{
+    float: left;
+    padding: 0 18px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    
+  }
+  .header-nav li a{
+    color: #000;
+    text-decoration: none;
+  }
+  .header-nav li a:hover{
+    color: #666;
+  }
+  .cd1{
+    position: relative;
+  }
+  .header-gata{
+    widows: 490px;
+    float: right;
+    margin-top: -10px;
+  }
+  .header-gata li{
+    float: left;
+  }
+  .header-gata li a img{
+    height: 40px;
+    padding-left: 20px;
+  }
+  .header-gata li a:hover{
+    opacity: 0.5;
+  }
+.nav{
+  float: none;
+    margin: 0 auto;
+    height: auto;
+}
+.nav h3{
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav h3 a{
+  color: #000;
+}
+.shopList{
+  margin: 0 auto;
+  height: auto;
+}
+.shopList-all{
+  background-color: #666;
+  margin-bottom: 20px;
+}
+.shopList-all h6{
+   height: 40px;
+   margin-top: 20px;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #d51819;
+}
+.row{
+    width: 1200px;
+    display: flex;
+    margin: auto;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.row dl{
+  box-sizing: border-box;
+  width: 20%;
+}
+.row dl dt{
+  padding: 3px 0;
+}
+.row dl dt img{
+  width: 230px;
+}
+.row dl dd{
+  padding: 3px 0;
+}
+.row dl dd a{
+  color: #000;
+  font-size: 14px;
+}
+.footer{
+  border-top:2px solid #cccccc ;
+  height: 190px;
+}
+.footer-all{
+  overflow: hidden;
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+    padding-top: 11px;
+ 
+}
+.footer-all dl{
+  width: 200px;
+  height: auto;
+  float: left;
+}
+.footer-all dl dt{
+  width: auto;
+  clear: right;
+  font: 700 14px "微软雅黑","黑体","微软雅黑","宋体",verdana;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color: #231815;
+  line-height: 18px;
+}
+.footer-all dl dd{
+  width: 200px;
+  padding-top: 13px;
+  display: block;
+}
+.footer-all dl dd a{
+  display: block;
+  font: 12px ;
+  color: #231815;
+}
+.footer-db{
+  margin-top: 20px;
+  height: 50px;
+}
+.sss {
+  border-top: 2px solid #cccccc;
+}
+.footer-db .sss p{
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+  float: none;
+  display: block;
+  font: 700 14px "微软雅黑","黑体","微软雅黑","宋体",verdana,verdana;
+  color: #787878;
+  line-height: 50px;
+}
+/* 首页 */
+/* 回到顶部 */
+.Back-top{
+  width: 60px;
+  height: auto;
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+.Back-top .top1{
+  width: 55px;
+  height: 100px;
+  float: left;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 10px;
+}
+.Back-top .bottom1{
+  width: 55px;
+  height: 55px;
+  float: left;
+  display: block;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/zhuce.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="center">
+            <h1>
+                <a href=""><img src="https://s.banggo.com/pub7/images/mbshop/newImg/mbshop_new_logo2.png" alt=""></a>
+            </h1>
+           <div class="nav">
+               <p>
+                   <a href="">手机注册</a>
+               </p>
+           </div>
+        </div>
+    </div>
+    <!-- 注册 -->
+        <div class="center">
+            <div class="box1">
+                <div class="box1-left">
+                    <p>第一步:填写注册账户信息(以下内容均为必填)</p>
+                    <form action="">
+                        <ul>
+                            <li>
+                               <input type="text" id="user"  placeholder="用户名/手机/邮箱" >
+                            </li>
+                            <li>
+                                <input type="password" id="pass"  placeholder="密码" >
+                            </li>
+                                <input  type="button" value="注册" id="btn2">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="box1-right">
+                      <h3>邦购网欢迎您</h3>
+                      <p>
+                        欢迎注册成为邦购网</br>会员，在这里您可以享受</br>最贴心快捷的购物服务，</br>我们的宗旨是让每一位顾</br>客都得到最大满意~~~
+                      </p>
+                </div>
+            </div>
+            <div class="footer">
+                    <p>
+                        美特斯邦威集团网站:<a href="">美特斯邦威</a>| <a href="">ME&CITY </a>| <a href="">CH'IN祺</a>|<a href="">邦购网</a>
+                    </p>
+            </div>
+        </div>
+        <script src="../js/jquery1.12.4.min copy.js"></script>
+    <script>
+        // 注册
+     $('#btn2').click(function(){
+         $.ajax({
+             url:'../json/zhuce.json',
+             data:{
+                 user:$('#user').val(),
+                 pwss:$('#pwss').val()
+             },
+             dataType:'json',
+             success:function(res){
+                 if(res.code===1){
+                     //注册成功
+                     localStorage.setItem('name',$('#user').val());
+                     location.href="./login.html"
+                 }
+             }
+         })
+     })
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.center{
+    width: 980px;
+    margin: 0 auto;
+}
+.logo h1{
+    width: 220px;
+    height: 100px;
+}
+.logo h1 a{
+    display: block;
+    width: 220px;
+    height: 100px;
+}
+.nav{
+    height: 27px;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 10px;
+} 
+.nav p{
+    height: 28px;
+    line-height: 28px;
+    width: 160px;
+    background-color: #999999;
+    text-align: center;
+    border-radius: 5px;
+}
+.nav p a{
+    font-weight:800 ;
+    color: #ffffff;
+}
+ .box1{
+    margin: 0 auto;
+    height: 410px;
+    width: 980px;
+    border: 1px solid #cccccc;
+}
+.box1-left{
+    width: 700px;
+    height: 410px;
+    float: left;
+}
+.box1 .box1-left p{
+    padding-top: 20px;
+    width: 700px;
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    border-bottom: 1px dotted #E6E6E6;
+}
+.box1 form{
+    width: 700px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.box1 li{
+    margin: 20px 0;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #ABABAB;
+    height: 28px;
+    line-height: 28px;
+}
+.box1 li input{
+    border: 1px solid #ABABAB;
+    width: 240px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px 0 0;
+    margin: 0 10px 0 0;
+    background-position: 0 -700px;
+    background-repeat: repeat-x;
+}
+#btn{
+    width: 20px;
+    height: 16px;
+}
+#btn2{
+    width: 120px;
+    margin-left: 50px;
+    background: red;
+    color: #ffffff;
+    cursor: pointer;
+}
+.box1-right{
+    width:280px;
+    float: right;
+}
+.box1-right h3{
+    width: 220px;
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px dashed red;
+    color: red;
+    margin: 0 30px;
+    font-weight: bold;
+}
+.box1-right p{
+   margin-top: 20px;
+    width: 220px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 30px;
+}
+.footer{
+    padding-top: 20px;
+}
+.footer p{
+    text-align: center;
+    margin: 0 auto;
+}
+.footer p a{
+    color: #000;
+}
+
+

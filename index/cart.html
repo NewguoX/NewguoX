@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/cart.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header-shop">
+        <div class="content-z">
+            <div class="header-left">
+                <p>
+                    欢迎来到邦购网，全场实付满99元包邮，本网站多为断码限量商品，支持14天无理由退换货，不支持退差价，感谢理解。
+                </p>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <a href="./login.html">登录</a>
+                    </li>
+                    <li>
+                        <a href="./zhuce.html">注册</a>
+                    </li>
+                    <li>
+                        <a href="">我的邦购</a>
+                    </li>
+                    <li>
+                        <a href="">会员中心</a>
+                    </li>
+                    <li>
+                        <a href="">下载APP</a>
+                    </li>
+                    <li>
+                        <a href="">微博</a>
+                    </li>
+                    <li>
+                        <a href="">微信</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <div class="content-z">
+            <h1>
+                <a href=""><img src="https://s.banggo.com/pub7/images/mbshop/newImg/mbshop_new_logo2.png" alt=""></a>
+            </h1>
+        </div>
+    </div>
+    <div class="content-z">
+        <p class="shops-gud">购物袋</p>
+    </div>
+    <div class="box">
+        <div class="header">
+            <h3><input type="checkbox" name="quan">全选</h3>
+            <h3>商品信息</h3>
+            <h3>单价</h3>
+            <h3>数量</h3>
+            <h3>金额（元）</h3>
+            <h3>操作</h3>
+            <p class="clear"></p>
+        </div>
+        <div class="content">
+            <div class="shop">
+                <h3><input type="checkbox" name="xuan"></h3>
+                <h3>
+                    <img
+                        src="https://pic.banggo.com/sources/images/goods/MB/229429/229429_00.jpg?x-oss-process=image/resize,m_fill,w_300,h_410">
+                    <span>METERSBONWE</span>
+                </h3>
+                <h3>￥<span>469.9</span></h3>
+                <h3>
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </h3>
+                <h3>￥<span>469.00</span></h3>
+                <h3>
+                    <button>删除</button>
+                </h3>
+                <p class="clear"></p>
+            </div>
+            <div class='footer'>
+                总计：<span class='total'>0.00</span>
+                店铺合计：<span class='shopTotal'>0.00</span>
+            </div>
+            <div class="new">
+                <span>
+                    <button>全删</button>
+                </span>
+                <span>
+                    <button class="coler1">结算</button>
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content-z">
+              <div class="footer-all">
+                <dl>
+                   <dt>新手指南</dt>
+                   <dd><a href="">注册新用户</a></dd>
+                   <dd><a href="">用户协议</a></dd>
+                   <dd><a href="">找回密码</a></dd>
+                </dl>
+                <dl>
+                   <dt>购物指南</dt>
+                   <dd><a href="">红包使用说明</a></dd>
+                   <dd><a href="">购物流程</a></dd>
+                   <dd><a href="">订单状态</a></dd>
+                   <dd><a href="">邦购币绑定与使用</a></dd>
+                   <dd><a href="">积分说明</a></dd>
+                </dl>
+                <dl>
+                  <dt>配送方式</dt>
+                  <dd><a href="">配送范围</a></dd>
+                  <dd><a href="">订单拆分</a></dd>
+                  <dd><a href="">商品验货与签收</a></dd>
+                </dl>
+                <dl>
+                  <dt>支付方式</dt>
+                  <dd><a href="">发票制度</a></dd>
+                  <dd><a href="">支付方式</a></dd>
+                </dl>
+                <dl>
+                  <dt>售后服务</dt>
+                  <dd><a href="">售后服务</a></dd>
+                  <dd><a href="">退换办理流程</a></dd>
+                  <dd><a href="">退款说明</a></dd>
+                </dl>
+                <dl>
+                  <dt>联系方式</dt>
+                  <dd><a href="">在线客服</a></dd>
+                  <dd><a href="">咨询电话: 4008219988</a></dd>
+                </dl>
+              </div>
+            </div>
+         </div>
+         <div class="footer-db">
+            <div class="content-z">
+               <div class="sss">
+                <p>
+                   CopyRight◎2000-2020,版权所有上海美特斯邦威服饰股份有限公司沪ICP备05033127号|沪ICP证B2-20150114 021-38119999营业执照
+                 </p>
+               </div>
+            </div>
+          </div>
+        <script src="../js/ajax1.js"></script>
+        <script src="../js/cookie.js"></script>
+        <script>
+
+            //获取操作对象
+            var box = document.querySelector('.box')
+            var shops = document.getElementsByClassName('shop')
+            var checkboxs = document.getElementsByName('xuan')
+            //给父元素绑定点击事件
+            box.onclick = function (e) {
+                var e = e || window.event
+                //获取点击对象
+                var target = e.target || e.srcElement
+                //判断是否删除按钮
+                if (target.innerHTML == '删除') {
+                    target.parentNode.parentNode.remove()
+                }
+
+                if (target.name == 'quan') {
+                    //遍历每一个商品对象
+                    for (var i = 0; i < shops.length; i++) {
+                        //判断当前全选框对象是否被选中
+                        if (target.checked) {
+                            shops[i].children[0].children[0].checked = true
+                        } else {
+                            shops[i].children[0].children[0].checked = false
+                        }
+                    }
+                    totals()
+                    ands()
+                }
+
+                //判断点击的是否为+按钮
+                if (target.innerHTML == '+') {
+                    //获取数量
+                    var val = target.previousElementSibling.value
+                    //数量递增
+                    val++
+                    //重新把递增的数量赋值给输入框
+                    target.previousElementSibling.value = val
+                    //获取单价
+                    var pirce = target.parentNode.previousElementSibling.lastElementChild.innerHTML
+                    //计算小计
+                    var num = parseInt(val) * parseFloat(pirce)
+                    //给小计赋值
+                    target.parentNode.nextElementSibling.lastElementChild.innerHTML = num
+                    totals()
+                    ands()
+                }
+                //判断点击对象是否为减号
+                if (target.innerHTML == '-') {
+                    var val = target.nextElementSibling.value
+                    if (val <= 1) {
+                        val = 1
+                    } else {
+                        val--
+                    }
+                    target.nextElementSibling.value = val
+                    //获取单价
+                    var pirce = target.parentNode.previousElementSibling.lastElementChild.innerHTML
+                    //计算小计
+                    var num = parseInt(val) * parseFloat(pirce)
+                    //给小计赋值
+                    target.parentNode.nextElementSibling.lastElementChild.innerHTML = num
+                    totals()
+                    ands()
+                }
+
+                if (target.innerHTML == '全删') {
+                    //遍历所有的选中框对象
+                    for (var i = checkboxs.length - 1; i >= 0; i--) {
+                        //判断当前选中框是否被选中
+                        if (checkboxs[i].checked) {
+                            checkboxs[i].parentNode.parentNode.remove()
+                        }
+                    }
+                    totals()
+                    ands()
+                }
+                if (target.name == 'xuan') {
+                    aaa()
+                }
+            }
+
+            function aaa() {
+                var num = 0 //代表选中框被选中的次数
+                //遍历所有商品选中框对象
+                for (var i = 0; i < checkboxs.length; i++) {
+                    //判断该中框是否被选中
+                    if (checkboxs[i].checked) {
+                        num++
+                    }
+                }
+                //当前被选中的次数是否等于长度
+                if (num == checkboxs.length) {
+                    document.querySelector('[name="quan"]').checked = true
+                } else {
+                    document.querySelector('[name="quan"]').checked = false
+                }
+                totals()
+                ands()
+            }
+
+            //总计
+            function totals() {
+                var total = 0 //总价格
+                //遍历所有商品
+                for (var i = 0; i < shops.length; i++) {
+                    //判断当前商品是否被选中
+                    if (shops[i].children[0].lastElementChild.checked) {
+                        //获取每个商品的金额
+                        var subtotal = shops[i].children[4].lastElementChild.innerHTML
+                        //累计
+                        total += parseFloat(subtotal)
+                    }
+                }
+                //给总额赋值
+                document.querySelector('.total').innerHTML = total
+            }
+            //店铺合计
+            function ands() {
+                var tot = 0
+                //遍历所有商品
+                for (var i = 0; i < shops.length; i++) {
+                    //获取每个商品的小计
+                    var subtotal = shops[i].children[4].lastElementChild.innerHTML
+                    //累加
+                    tot += parseFloat(subtotal)
+                }
+                //给店铺合计赋值
+                document.querySelector('.shopTotal').innerHTML = tot
+            }
+            totals()
+            ands()
+        </script>
+</body>
+</html>
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="center">
+            <h1>
+                <a href=""><img src="https://s.banggo.com/pub7/images/mbshop/newImg/mbshop_new_logo2.png" alt=""></a>
+            </h1>
+        </div>
+    </div>
+    <!-- 登录 -->
+    <div class="nav">
+         <div class="center">
+              <div class="box-left">
+                <a href="">
+                    <img src="https://passport.banggo.com/CASServer/themes/banggo/images/banggo/login_banner.jpg" alt="">
+                </a>
+              </div>
+              <div class=box-right>
+               <h3>账户登录</h3>
+               <form action="">
+                <p>
+                    用户名：&nbsp;&nbsp;&nbsp;<input type="text" id="user"  placeholder="用户名/手机/邮箱" >
+                </p>
+                <p>
+                    登录密码：<input type="text" id="pass"  placeholder="密码" >
+                </p>
+                <p>
+                    <input type="submit" value="登录" id="btn2" >
+                </p>
+               </form>
+              </div>
+         </div>
+    </div>
+    <div class="footer">
+        <div class="center">
+            <p>
+                美特斯邦威集团网站:<a href="">美特斯邦威</a>| <a href="">ME&CITY </a>| <a href="">CH'IN祺</a>|<a href="">邦购网</a>
+            </p>
+        </div>
+    </div>
+    <script src="../js/jquery1.12.4.min copy.js"></script>
+    <script>
+        //登录
+        $('#btn2').click(function(){
+         $.ajax({
+             url:'../json/login.json',
+             data:{
+                 user:$('#user').val(),
+                 pwss:$('#pwss').val()
+             },
+             dataType:'json',
+             success:function(res){
+                 if(res.code===1){
+                     //注册成功
+                     localStorage.setItem('name',$('#user').val());
+                     location.href="../index/index.html"
+                 }
+             }
+         })
+     })
+    
+    </script>
+    
+</body>
+</html>

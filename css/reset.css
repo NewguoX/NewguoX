@@ -1,0 +1,38 @@
+/* css样式重置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font:12px "微软雅黑",Arial;
+}
+h1,h2,h3,h4,h4,h5,h6,b,strong{
+    font-weight: normal;
+    font-size: 100%;
+}
+i,em{
+    font-style: normal;        /*取消倾斜*/
+}
+li{
+    list-style: none;       /*取消li项目符号*/
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+}
+input{
+    outline: none;
+}
+
+.clearfix{
+    *zoom: 1;
+}
+.clearfix::after{                          /*清除浮动*/
+    content: ' ';
+    display: block;
+    height: 0;
+    visibility: hidden; 
+    clear: both;
+}
