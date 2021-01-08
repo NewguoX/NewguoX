@@ -193,8 +193,7 @@
                     //获取单价
                     var pirce = target.parentNode.previousElementSibling.lastElementChild.innerHTML
                     //计算小计
-                    // var num = parseInt(val) * parseInt(pirce)
-                    var num = parseInt(val) *((pirce).toFixed(2))
+                    var num = parseInt(val) * parseInt(pirce)
                     //给小计赋值
                     target.parentNode.nextElementSibling.lastElementChild.innerHTML = num
                     totals()
