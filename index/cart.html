@@ -193,13 +193,15 @@
                     //获取单价
                     var pirce = target.parentNode.previousElementSibling.lastElementChild.innerHTML
                     //计算小计
-                    var num = parseInt(val) * parseFloat(pirce)
+                    // var num = parseInt(val) * parseInt(pirce)
+                    var num = parseInt(val) *((pirce).toFixed(2))
                     //给小计赋值
                     target.parentNode.nextElementSibling.lastElementChild.innerHTML = num
                     totals()
                     ands()
                 }
                 //判断点击对象是否为减号
+               
                 if (target.innerHTML == '-') {
                     var val = target.nextElementSibling.value
                     if (val <= 1) {
@@ -211,8 +213,7 @@
                     //获取单价
                     var pirce = target.parentNode.previousElementSibling.lastElementChild.innerHTML
                     //计算小计
-                    pirce=pirce.toFixed(2)
-                    var num = parseInt(val) * (pirce)
+                    var num = parseInt(val) * parseInt(pirce)
                     //给小计赋值
                     target.parentNode.nextElementSibling.lastElementChild.innerHTML = num
                     totals()
