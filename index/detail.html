@@ -172,9 +172,9 @@
                   尺码: <span>XXS:155/80A</span> 
                </dt>
                <dd>
-                  <span type="size" value="XXS:155/80A" class="detail-color">XXS:155/80A</span>
-                  <span type="size" value="S:160/84A" class="detail-color">S:160/84A</span>
-                  <span type="size" value="L:170/88A" class="detail-color">L:170/88A</span>
+                  <span type="size" value="XXS:155/80A" class="actver">XXS:155/80A</span>
+                  <span type="size" value="S:160/84A" >S:160/84A</span>
+                  <span type="size" value="L:170/88A" >L:170/88A</span>
                </dd>
             </dl>
             <div class="detail-gwc">
@@ -194,14 +194,7 @@
    <script src="../js/jquery1.12.4.min copy.js"></script>
    <script>
       //点击获取不同的尺码
-      $('.detail-color').on('click',function(){
-        var detail = $(this).next(".detail-color");
-        if (detail) {
-         $('.detail-color').css({'border':'1px red solid','dispaly':'block','color':'red'})
-        } else {
-         $('.detail-color').css('')
-        }
-      })
+     $()
    </script>
 </body>
 </html>
